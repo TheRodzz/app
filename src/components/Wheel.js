@@ -8,7 +8,7 @@ export default () => {
         { option: '2' },
         { option: '3' },
     ]
-    const { teams, chosenTeams } = useContext(Context);
+    const { teams } = useContext(Context);
     const [mustSpin, setMustSpin] = useState(false);
     const [prizeNumber, setPrizeNumber] = useState(0);
     const [index, setIndex] = useState(0);
@@ -24,8 +24,7 @@ export default () => {
             const remove = { option: `${prizeNumber}` };
             data.splice(data.indexOf(remove), 1);
             setMustSpin(true);
-            // const newPrizeNumber = chosenTeams[index];
-            const newPrizeNumber = Math.floor(Math.random() * data.length) + 1
+            const newPrizeNumber = Math.floor(Math.random() * data.length)
             setIndex(index + 1);
             setPrizeNumber(newPrizeNumber);
         }

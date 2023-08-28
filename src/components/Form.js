@@ -44,10 +44,10 @@ function Form() {
                     <label htmlFor="exampleInputEmail1" className="form-label">Total number of teams </label>
                     <input type="number" className="form-control" id="totalTeam" aria-describedby="emailHelp" onChange={handleInputChange} />
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <label htmlFor="exampleInputPassword1" className="form-label">Teams to be selected</label>
                     <input type="number" className="form-control" id="chose" onChange={handleInputChange} />
-                </div>
+                </div> */}
 
                 <button type="submit" className="btn btn-primary">Set</button>
             </form>
